@@ -13,6 +13,7 @@ $foreground: #f8f8f2;
 $comment: #6272a4;
 $green: #50fa7b;
 $purple: #bd93f9;
+$pink: #ff79c6;
 
 // The theme's dark mode inverts the page with a filter; turn that off and
 // set the Dracula colours directly instead.
@@ -22,7 +23,8 @@ html, body { background: $background; }
 body { color: $foreground; }
 
 a, a:visited { color: $green; }
-h1, h2, h3 { color: $purple; }
+h1, h3 { color: $purple; }
+h2 { color: $pink; }
 .post-meta { color: $comment; }
 
 *:target { background: $current-line; }

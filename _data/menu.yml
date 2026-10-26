@@ -6,7 +6,7 @@ entries:
     url: /publications.html
     post_list: # previews the newest papers from publications/_posts/
       category: publications
-      limit: 2
+      limit: 3
       show_more: true
       show_more_text: see all publications...
       show_more_url: /publications.html

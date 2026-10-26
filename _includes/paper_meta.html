@@ -1,5 +1,5 @@
 {%- assign pub = include.pub -%}
-{%- assign me = "<b>" | append: site.author | append: "</b>" -%}
+{%- assign me = "<u>" | append: site.author | append: "</u>" -%}
 {%- if pub.year -%}
   {%- assign year = pub.year | append: "" -%}
 {%- else -%}
@@ -10,10 +10,13 @@
 <i>{{ pub.venue }}</i>
 {%- unless pub.venue contains year %}, {{ year }}{%- endunless -%}
 {%- if pub.note %} ({{ pub.note }}){%- endif -%}
+{%- comment -%} Pass links=false to leave out the preprint/pdf/arxiv/code links. {%- endcomment -%}
+{%- unless include.links == false -%}
 {%- if pub.preprint or pub.pdf or pub.arxiv or pub.code -%}
 <br>
 {%- if pub.preprint %} [<a href="{{ pub.preprint }}">preprint</a>]{%- endif -%}
 {%- if pub.pdf %} [<a href="{{ pub.pdf }}">pdf</a>]{%- endif -%}
 {%- if pub.arxiv %} [<a href="{{ pub.arxiv }}">arxiv</a>]{%- endif -%}
 {%- if pub.code %} [<a href="{{ pub.code }}">code</a>]{%- endif -%}
-{%- endif %}
+{%- endif -%}
+{%- endunless %}

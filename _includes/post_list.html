@@ -25,6 +25,10 @@
           {% else %}
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           {% endif %}
+          {%- if include.category == "publications" -%}
+          <br>
+          {%- include paper_meta.html pub=post links=false -%}
+          {%- endif %}
         </li>
     {%- endfor -%}
     {%- if include.show_more and limit_exceeded -%}

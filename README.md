@@ -6,7 +6,7 @@ Personal homepage built with Jekyll and the
 ## Editing
 
 - **Name and one-line description**: `title`, `author` and `description` in `_config.yml`
-  (keep `author` identical to how your name appears in author lists so it gets bolded).
+  (keep `author` identical to how your name appears in author lists so it gets underlined).
 - **Homepage list**: `_data/menu.yml`. Each entry links to a page; `post_list` on the
   publications entry controls how many papers are previewed there.
 - **Papers**: one Markdown file per paper in `publications/_posts/`, named
