@@ -17,3 +17,4 @@ entries:
   - title: info
     entries:
       - title: "built with <a href='https://github.com/riggraz/no-style-please'>no style, please!</a>, a jekyll theme by <a href='https://riggraz.dev'>riggraz</a>"
+      - title: "modded with the help of <a href='https://claude.com/claude-code'>claude code</a>"
