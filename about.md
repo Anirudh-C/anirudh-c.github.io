@@ -13,4 +13,9 @@ title: about
     - advised by [Prof. Ashish Choudhury](https://sites.google.com/view/ashish-choudhury) and [Prof. Arpita Patra](https://www.csa.iisc.ac.in/~arpita/)
     - International Institute of Information Technology Bangalore, India
     - thesis: [Unconditionally-Secure MPC with Dynamic Participation](/masters-thesis.html)
+- miscellaneous
+  - i enjoy reading
+  - i play violin
+  - i play chess
+  - i watch football
 - Email: firstname [dot] lastname [at] biu [dot] ac [dot] il
