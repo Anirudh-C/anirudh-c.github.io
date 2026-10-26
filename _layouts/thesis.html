@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{%-include back_link.html-%}
+
+<article>
+  <p class="post-meta">
+    <time datetime="{{ page.date }}">{{ page.date | date: "%Y" }}</time>
+  </p>
+
+  <h1>{{ page.title }}</h1>
+
+  <p>{%- include paper_meta.html pub=page -%}</p>
+
+  {{ content }}
+</article>

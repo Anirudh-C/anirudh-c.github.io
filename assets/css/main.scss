@@ -1,0 +1,17 @@
+---
+---
+
+@import "no-style-please";
+
+// Show all text in lowercase.
+body { text-transform: lowercase; }
+
+// Links are green, and visited links look the same.
+// Dark mode inverts the whole page, so use the inverse there to still show green.
+a, a:visited { color: #008000; }
+
+body[a="dark"] a { color: #cc33cc; } // displays as #33cc33
+
+@media (prefers-color-scheme: dark) {
+  body[a="auto"] a { color: #cc33cc; }
+}

@@ -1,0 +1,9 @@
+<ul>
+  {%- for pub in site.data.journals -%}
+  <li>
+    {{ pub.title }}
+    <br>
+    {%- include paper_meta.html pub=pub -%}
+  </li>
+  {%- endfor -%}
+</ul>

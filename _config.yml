@@ -1,0 +1,48 @@
+title: anirudh chandramouli # shown as the heading of the homepage
+author: Anirudh Chandramouli # also used to bold your name in publication author lists
+email: anirudhvan@gmail.com
+url: https://anirudh-c.github.io # replace USERNAME with your GitHub username
+baseurl: "" # user site (USERNAME.github.io) is served at the root
+description: > # one-line description shown under your name
+  I think about cryptography and secure computation
+
+permalink: /:slug.html
+
+# Posts in publications/_posts/ are paper pages; posts in theses/_posts/ are thesis
+# pages, which show only the year.
+defaults:
+  - scope:
+      path: "publications"
+      type: posts
+    values:
+      layout: paper
+  - scope:
+      path: "theses"
+      type: posts
+    values:
+      layout: thesis
+
+# favicon: "favicon.png" # put the image in the repo root and uncomment
+
+remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "light" # "light", "dark" or "auto"
+  back_home_text: ".." # text of the link back to the homepage on other pages
+  date_format: "%Y-%m-%d"
+  show_description: true
+  lowercase_titles: true
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

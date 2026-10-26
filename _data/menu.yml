@@ -1,0 +1,19 @@
+# The list shown on the homepage. Each entry links to a page on this site.
+entries:
+  - title: about
+    url: /about.html
+  - title: publications
+    url: /publications.html
+    post_list: # previews the newest papers from publications/_posts/
+      category: publications
+      limit: 2
+      show_more: true
+      show_more_text: see all publications...
+      show_more_url: /publications.html
+  - title: chess blog
+    url: /dead-squares/
+  - title: art journal
+    url: /art-journal/
+  - title: info
+    entries:
+      - title: "built with <a href='https://github.com/riggraz/no-style-please'>no style, please!</a>, a jekyll theme by <a href='https://riggraz.dev'>riggraz</a>"

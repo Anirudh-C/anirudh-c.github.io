@@ -1,0 +1,19 @@
+{%- assign pub = include.pub -%}
+{%- assign me = "<b>" | append: site.author | append: "</b>" -%}
+{%- if pub.year -%}
+  {%- assign year = pub.year | append: "" -%}
+{%- else -%}
+  {%- assign year = pub.date | date: "%Y" -%}
+{%- endif -%}
+{{ pub.authors | replace: site.author, me }}
+<br>
+<i>{{ pub.venue }}</i>
+{%- unless pub.venue contains year %}, {{ year }}{%- endunless -%}
+{%- if pub.note %} ({{ pub.note }}){%- endif -%}
+{%- if pub.preprint or pub.pdf or pub.arxiv or pub.code -%}
+<br>
+{%- if pub.preprint %} [<a href="{{ pub.preprint }}">preprint</a>]{%- endif -%}
+{%- if pub.pdf %} [<a href="{{ pub.pdf }}">pdf</a>]{%- endif -%}
+{%- if pub.arxiv %} [<a href="{{ pub.arxiv }}">arxiv</a>]{%- endif -%}
+{%- if pub.code %} [<a href="{{ pub.code }}">code</a>]{%- endif -%}
+{%- endif %}

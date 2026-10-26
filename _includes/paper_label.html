@@ -1,0 +1,13 @@
+{%- comment -%}
+  Sets paper_label to YYYY.[i] for include.post, where i counts that year's papers
+  oldest first, from 1. Posts are sorted newest first, so count same-year posts after it.
+{%- endcomment -%}
+{%- assign paper_year = include.post.date | date: "%Y" -%}
+{%- assign paper_number = 1 -%}
+{%- assign paper_found = false -%}
+{%- for other in site.categories.publications -%}
+  {%- assign other_year = other.date | date: "%Y" -%}
+  {%- if paper_found and other_year == paper_year -%}{%- assign paper_number = paper_number | plus: 1 -%}{%- endif -%}
+  {%- if other.url == include.post.url -%}{%- assign paper_found = true -%}{%- endif -%}
+{%- endfor -%}
+{%- assign paper_label = paper_year | append: ".[" | append: paper_number | append: "]" -%}
