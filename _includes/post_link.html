@@ -3,7 +3,7 @@
   blog_posts is false in _config.yml.
 {%- endcomment -%}
 {%- if site.blog_posts == false -%}
-  {{- include.title -}}
+  <span class="post-title">{{ include.title }}</span>
 {%- else -%}
   <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
 {%- endif -%}

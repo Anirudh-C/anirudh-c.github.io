@@ -23,6 +23,7 @@ html, body { background: $background; }
 body { color: $foreground; }
 
 a, a:visited { color: $green; }
+.post-title { color: $green; } // paper/thesis titles when blog_posts is false
 h1, h3 { color: $purple; }
 h2 { color: $pink; }
 .post-meta { color: $comment; }
