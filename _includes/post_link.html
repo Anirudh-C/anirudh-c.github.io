@@ -1,0 +1,9 @@
+{%- comment -%}
+  Links include.title to the blog post at include.url, or shows plain text when
+  blog_posts is false in _config.yml.
+{%- endcomment -%}
+{%- if site.blog_posts == false -%}
+  {{- include.title -}}
+{%- else -%}
+  <a href="{{ include.url | relative_url }}">{{ include.title }}</a>
+{%- endif -%}

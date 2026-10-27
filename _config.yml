@@ -8,6 +8,7 @@ description: > # one-line description shown under your name
 
 permalink: /:slug.html
 future: true # publish posts even if their date is ahead of GitHub's (UTC) clock
+blog_posts: false # false: paper and thesis titles are plain text, not links to their blog posts
 
 # Posts in publications/_posts/ are paper pages; posts in theses/_posts/ are thesis
 # pages, which show only the year.

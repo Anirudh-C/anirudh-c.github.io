@@ -1,7 +1,7 @@
 <ul>
   {%- for pub in site.categories.publications -%}
   <li>
-    <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+    {% include post_link.html url=pub.url title=pub.title %}
     <br>
     {%- include paper_meta.html pub=pub -%}
   </li>

@@ -8,11 +8,11 @@ title: about
   - was a PhD student
     - Advised by [Prof. Gilad Asharov](https://u.cs.biu.ac.il/~asharog/)
     - Bar-Ilan University, Israel
-    - thesis: [On the Communication and Latency of Unconditionally Secure Computation](/phd-thesis.html)
+    - thesis: {% include post_link.html url="/phd-thesis.html" title="On the Communication and Latency of Unconditionally Secure Computation" %}
   - was an integrated masters student
     - advised by [Prof. Ashish Choudhury](https://sites.google.com/view/ashish-choudhury) and [Prof. Arpita Patra](https://www.csa.iisc.ac.in/~arpita/)
     - International Institute of Information Technology Bangalore, India
-    - thesis: [Unconditionally-Secure MPC with Dynamic Participation](/masters-thesis.html)
+    - thesis: {% include post_link.html url="/masters-thesis.html" title="Unconditionally-Secure MPC with Dynamic Participation" %}
 - miscellaneous
   - i enjoy reading
   - i play violin
